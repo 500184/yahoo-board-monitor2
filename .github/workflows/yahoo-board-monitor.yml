@@ -1,10 +1,9 @@
-name: Yahoo Board Monitor 2
+name: Yahoo!掲示板モニター2
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "2-59/5 * * * *"
-      timezone: "Asia/Tokyo"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -18,24 +17,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: チェックアウト
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Pythonをセットアップ
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: 依存関係をインストールします
         run: pip install -r requirements.txt
 
-      - name: Run monitor
+      - name: モニターを実行します
         env:
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
           IFTTT_EVENT: yahoo_board_spike
         run: python monitor.py
 
-      - name: Commit state
+      - name: コミット状態
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
