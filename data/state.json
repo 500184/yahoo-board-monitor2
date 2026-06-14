@@ -1,9 +1,9 @@
 {
   "alerts": {},
-  "last_run": "2026-06-15T04:15:22.469350+09:00",
+  "last_run": "2026-06-15T04:20:17.176969+09:00",
   "last_result": {
-    "checked": 42,
-    "failed": 0,
+    "checked": 36,
+    "failed": 6,
     "alerted": 0,
     "market_open": false
   }
