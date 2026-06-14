@@ -2,8 +2,6 @@ name: Yahoo!掲示板モニター2
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
