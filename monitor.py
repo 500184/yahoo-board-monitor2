@@ -18,7 +18,7 @@ IFTTT_EVENT = os.environ.get("IFTTT_EVENT", "yahoo_board_spike")
 
 # 市場時間内の通知基準
 MARKET_LAST5_THRESHOLD = 10
-MARKET_SURGE_THRESHOLD = 10
+MARKET_SURGE_THRESHOLD = 5
 
 # 市場時間外の通知基準
 OFF_LAST5_THRESHOLD = 5
