@@ -74,6 +74,11 @@ BOARDS = [
     {"name": "坪田ラボ", "code": "4890", "url": "https://finance.yahoo.co.jp/quote/4890.T/forum"},
     {"name": "フェニックスバイオ", "code": "6190", "url": "https://finance.yahoo.co.jp/quote/6190.T/forum"},
     {"name": "ジェイファーマ", "code": "520A", "url": "https://finance.yahoo.co.jp/quote/520A.T/forum"},
+    {"name": "イノバセル", "code": "504A", "url": "https://finance.yahoo.co.jp/quote/504A.T/forum"},
+    {"name": "メディネット", "code": "2370", "url": "https://finance.yahoo.co.jp/quote/2370.T/forum"},
+    {"name": "免疫生物研究所", "code": "4570", "url": "https://finance.yahoo.co.jp/quote/4570.T/forum"},
+    {"name": "トランスジェニック", "code": "2342", "url": "https://finance.yahoo.co.jp/quote/2342.T/forum"},
+    {"name": "J・TEC", "code": "7774", "url": "https://finance.yahoo.co.jp/quote/7774.T/forum"},
 ]
 
 
